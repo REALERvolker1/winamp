@@ -58,7 +58,7 @@ void wav_getmetainfo(char *filename,char *meta);
 #ifdef DO_LOG
 void do_log_print(char *);
 #else
-#define do_log_print(x)
+#define do_log_print(x) printf("DO_LOG_PRINT %s\n", x)
 #endif
 
 #ifdef __cplusplus
